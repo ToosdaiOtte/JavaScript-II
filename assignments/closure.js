@@ -1,6 +1,19 @@
 // ==== Challenge 1: Write your own closure ====
 // Write a simple closure of your own creation.  Keep it simple!
+let myName = {
+  firstName: 'Toosdai',
+  lastName: 'Otte'
+}
 
+function greeting() {
+  let greet = 'Hello';
+  function personal() {
+    return 'Hello ' + myName.firstName + ' ' + myName.lastName;
+  }
+  return personal();
+}
+
+console.log(greeting());
 
 /* STRETCH PROBLEMS, Do not attempt until you have completed all previous tasks for today's project files */
 
