@@ -8,7 +8,7 @@ let myName = {
 function greeting() {
   let greet = 'Hello';
   function personal() {
-    return 'Hello ' + myName.firstName + ' ' + myName.lastName;
+    return 'Hello ' + `${myName.firstName} ${myName.lastName}`;
   }
   return personal();
 }
